@@ -19,10 +19,6 @@ function run () {
         warn(`${moduleName}@${installed} is outdated. Latest is ${latest}`);
         hasWarnings = true;
       }
-      if (unused) {
-        hasWarnings = true;
-        warn(`${moduleName} is unused`);
-      }
     });
 
     if (hasWarnings) {
