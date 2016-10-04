@@ -1,0 +1,34 @@
+{
+  "name": "ci-npm-check",
+  "version": "1.0.0",
+  "description": "Wrapper to enable npm-check for Jenkins jobs",
+  "main": "src/index.js",
+  "bin": "./src/index.js",
+  "scripts": {
+    "lint": "eslint --ext .js src",
+    "test": "echo No Tests",
+    "posttest": "npm run lint"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dmkelly/ci-npm-check.git"
+  },
+  "keywords": [
+    "npm-check",
+    "dependency",
+    "ci"
+  ],
+  "author": "Dave Kelly",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dmkelly/ci-npm-check/issues"
+  },
+  "homepage": "https://github.com/dmkelly/ci-npm-check#readme",
+  "dependencies": {
+    "npm-check": "5.2.3"
+  },
+  "devDependencies": {
+    "babel-eslint": "7.0.0",
+    "eslint": "3.7.1"
+  }
+}
