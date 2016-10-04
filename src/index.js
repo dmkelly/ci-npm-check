@@ -14,7 +14,7 @@ function run () {
     const packages = currentState.get('packages');
     let hasWarnings = false;
     packages.forEach(pkg => {
-      const { moduleName, isInstalled, installed, latest, bump, unused } = pkg;
+      const { moduleName, isInstalled, installed, latest, bump } = pkg;
       if (isInstalled && installed !== latest && bump !== PATCH) {
         warn(`${moduleName}@${installed} is outdated. Latest is ${latest}`);
         hasWarnings = true;
