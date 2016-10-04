@@ -1,3 +1,5 @@
+#! /usr/bin/env node
+
 const npmCheck = require('npm-check');
 const chalk = require('chalk');
 
